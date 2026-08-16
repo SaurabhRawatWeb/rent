@@ -8,15 +8,27 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+>
 </head>
-<body class="bg-body-tertiary">
+<body class="bg-body-tertiary"  style="font-family: 'Inter', sans-serif;">
+
     <main class="min-vh-100 d-flex align-items-center justify-content-center py-4">
+
         <div class="container-fluid px-3 px-md-4">
+
             <div class="bg-white rounded-4 shadow-sm overflow-hidden">
+
                 <div class="row g-0 align-items-center">
+
                     <div class="col-lg-6 d-none d-lg-block">
+
                         <div class="px-5 px-xl-5">
+
                             <div class="d-flex align-items-center mb-5">
+
                                 <div
                                     class="bg-primary rounded-3 d-flex align-items-center justify-content-center me-3 p-3"
                                 >
@@ -24,53 +36,131 @@
                                         R
                                     </span>
                                 </div>
+
                                 <span class="fs-2 fw-bold text-dark">
                                     Renting
                                 </span>
+
                             </div>
-                            <!-- LEFT CONTENT -->
+
                             <div class="text-center py-5 px-4">
+
                                 <h2 class="display-6 fw-semibold text-primary lh-sm mb-4">
                                     Simplified Renting,<br>
                                     <span class="text-dark">
                                         Empowered Living
                                     </span>
                                 </h2>
+
                                 <p class="fs-5 text-secondary mb-2">
                                     Welcome to the Future of
                                     Rental Management
                                 </p>
+
                                 <p class="fs-6 text-secondary mb-0">
                                     "Your Rental Journey Begins Here"
                                 </p>
+
+                                <div class="mt-5 pt-3">
+
+                                    <div class="d-flex justify-content-center flex-wrap gap-3">
+
+                                        <span class="text-dark fw-medium">
+                                            नमस्ते
+                                        </span>
+
+                                        <span class="text-secondary">
+                                            Hello
+                                        </span>
+
+                                        <span class="text-dark fw-medium">
+                                            सत्यमेव जयते
+                                        </span>
+
+                                        <span class="text-dark fw-medium">
+                                            السلام علیکم
+                                        </span>
+
+                                        <span class="text-dark fw-medium">
+                                            नमस्कार
+                                        </span>
+
+                                        <span class="text-dark fw-medium">
+                                            કેમ છો
+                                        </span>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-center flex-wrap gap-3 mt-2">
+
+                                        <small class="text-secondary">
+                                            Hindi
+                                        </small>
+
+                                        <small class="text-secondary">
+                                            English
+                                        </small>
+
+                                        <small class="text-secondary">
+                                            Sanskrit
+                                        </small>
+
+                                        <small class="text-secondary">
+                                            Urdu
+                                        </small>
+
+                                        <small class="text-secondary">
+                                            Marathi
+                                        </small>
+
+                                        <small class="text-secondary">
+                                            Gujarati
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
                             </div>
+
                         </div>
+
                     </div>
-                    <!-- RIGHT SIDE -->
+
                     <div class="col-lg-6">
+
                         <div class="p-3 p-md-4 p-xl-5">
-                            <!-- LOGIN CARD -->
+
                             <div
                                 class="border border-2 border-info rounded-4 bg-light"
                             >
+
                                 <div class="p-4 p-md-5">
+
                                     <div class="text-center mb-4">
+
                                         <h1 class="display-6 fw-bold text-dark mb-2">
                                             Welcome Back
                                         </h1>
+
                                         <p class="text-dark mb-0">
                                             Enter your email and password to
                                             access your account
                                         </p>
+
                                     </div>
+
                                     <form action="#" method="POST">
+
                                         <div class="mb-3">
+
                                             <label
                                                 for="email"
                                                 class="form-label fw-medium"
                                             >
                                                 Email
                                             </label>
+
                                             <input
                                                 type="email"
                                                 id="email"
@@ -80,14 +170,18 @@
                                                 autocomplete="email"
                                                 required
                                             >
+
                                         </div>
+
                                         <div class="mb-2">
+
                                             <label
                                                 for="password"
                                                 class="form-label fw-medium"
                                             >
                                                 Password
                                             </label>
+
                                             <input
                                                 type="password"
                                                 id="password"
@@ -97,67 +191,98 @@
                                                 autocomplete="current-password"
                                                 required
                                             >
+
                                         </div>
+
                                         <div class="text-end mb-4">
+
                                             <a
                                                 href="#"
                                                 class="text-primary text-decoration-none"
                                             >
                                                 Forgot Password?
                                             </a>
+
                                         </div>
+
                                         <div class="d-grid mb-4">
+
                                             <button
                                                 type="submit"
                                                 class="btn btn-primary btn-lg rounded-pill"
                                             >
                                                 Login to continue
                                             </button>
+
                                         </div>
+
                                         <div class="d-flex align-items-center gap-3 mb-4">
+
                                             <hr class="flex-grow-1">
+
                                             <span class="text-secondary">
                                                 Or
                                             </span>
+
                                             <hr class="flex-grow-1">
+
                                         </div>
+
                                         <div class="d-grid mb-4">
+
                                             <button
                                                 type="button"
                                                 class="btn btn-outline-primary btn-lg rounded-3"
                                             >
+
                                                 <span
                                                     class="fw-bold text-danger me-2"
                                                 >
                                                     G
                                                 </span>
+
                                                 Sign in with Google
+
                                             </button>
+
                                         </div>
+
                                         <div class="text-center">
+
                                             <span class="text-dark">
                                                 Don't have an account yet?
                                             </span>
+
                                             <a
                                                 href="#"
                                                 class="text-primary text-decoration-none fw-semibold ms-1"
                                             >
                                                 Create account
                                             </a>
+
                                         </div>
+
                                     </form>
+
                                 </div>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </main>
+
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     ></script>
 
 </body>
-
 </html>
