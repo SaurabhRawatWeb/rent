@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-       Schema::create('companies', function (Blueprint $table) {
+        Schema::create('companies', function (Blueprint $table) {
             $table->id();
             // Public identifier
             $table->uuid('uuid')->unique();
             // Basic company information
             $table->string('name');
             $table->string('slug')->unique();
+            $table->string('subdomain')->unique();
             $table->string('legal_name')->nullable();
             // Contact information
             $table->string('email')->nullable();
@@ -44,6 +45,7 @@ return new class extends Migration
             $table->string('date_format', 30)->default('d M Y');
             // Company lifecycle
             $table->string('status', 30)->default('active');
+            $table->boolean('is_active')->default(true);
             // Onboarding
             $table->timestamp('onboarding_completed_at')->nullable();
             // Timestamps
@@ -52,6 +54,7 @@ return new class extends Migration
             $table->softDeletes();
             // Indexes
             $table->index('status');
+            $table->index('is_active');
             $table->index('country');
             $table->index('gst_number');
         });

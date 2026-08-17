@@ -21,7 +21,20 @@
 
 </div>
 
-<form action="#" method="POST">
+@php
+    $subdomain = request()->route('subdomain');
+    $isTenantRoute = is_string($subdomain) && $subdomain !== '';
+    $loginRoute = $isTenantRoute ? route('tenant.login.store') : route('superadmin.login.store');
+    $googleRoute = $isTenantRoute ? route('tenant.google.login') : route('superadmin.google.login');
+@endphp
+
+@if ($errors->any())
+    <div class="alert alert-danger rounded-2 py-2" style="font-size: 13px;">
+        {{ $errors->first() }}
+    </div>
+@endif
+
+<form action="{{ $loginRoute }}" method="POST">
 
     @csrf
 
@@ -42,6 +55,7 @@
             class="form-control bg-dark-blue-subtle border rounded-2"
             placeholder="Enter Email"
             autocomplete="email"
+            value="{{ old('email') }}"
             required
         >
 
@@ -108,13 +122,13 @@
 
     <div class="d-grid mb-4">
 
-        <button
-            type="button"
+        <a
+            href="{{ $googleRoute }}"
             class="btn btn-outline-dark-blue fw-semibold rounded-2"
         >
             <span class="fw-bold text-danger me-2">G</span>
             Sign in with Google
-        </button>
+        </a>
 
     </div>
 
